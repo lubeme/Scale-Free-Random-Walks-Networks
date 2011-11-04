@@ -7,7 +7,7 @@ from scipy.stats import bernoulli
 __author__ = 'Luis Úbeda (http://www.github.com/lubeme)' 
 
 
-def random_walks_powerlaw_cluster_graph(m,n,cc):
+def random_walks_powerlaw_cluster_graph(m,n,cc,seed=None):
     """Return random graph using Herrera-Zufiria random walks model.
     
     A Scale-free graph of n nodes is grown by attaching new nodes 
@@ -23,6 +23,8 @@ def random_walks_powerlaw_cluster_graph(m,n,cc):
     cc: int
         clustering control parameter, from 0 to 100. Increasing control
         parameter implies increasing the clustering of the graph
+    seed : int, optional
+        Seed for random number generator (default=None). 
 
     Returns
     -------
@@ -46,7 +48,8 @@ def random_walks_powerlaw_cluster_graph(m,n,cc):
         raise nx.NetworkXError(\
             "The network must have m>=1, m<n and "
             "cc between 0 and 100. m=%d,n=%d cc=%d"%(m,n,cc))
-        
+    if seed is not None:
+        random.seed(seed)
     nCero= max(11,m)
     if nCero%2==0:
         nCero+=1
