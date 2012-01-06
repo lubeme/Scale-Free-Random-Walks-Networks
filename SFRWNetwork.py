@@ -6,7 +6,6 @@ from scipy.stats import bernoulli
 
 __author__ = 'Luis Úbeda (http://www.github.com/lubeme)' 
 
-#stupid comment
 def random_walks_powerlaw_cluster_graph(m,n,cc,seed=None):
     """Return random graph using Herrera-Zufiria random walks model.
     
