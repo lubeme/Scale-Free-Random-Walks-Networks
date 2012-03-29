@@ -81,7 +81,7 @@ def random_walks_powerlaw_cluster_graph(m,n,cc,seed=None):
         for i in range(m-1):
             #Random walk of l = [1 , 2] depending on the 
             #genetic factor of the node vl
-            l =p[vl]+1
+            l =2 - p[vl]
             vll=vl
             #Random Walk starting on vl, avoiding already marked vertices
             while ((vll in markedVertices)):
