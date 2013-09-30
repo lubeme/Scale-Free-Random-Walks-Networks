@@ -55,7 +55,7 @@ def random_walks_powerlaw_cluster_graph(m,n,cc,seed=None):
     if nCero%2==0:
         nCero+=1
     #initialise graph
-    G= networkx.generators.classic.cycle_graph(ncero)
+    G= nx.generators.classic.cycle_graph(nCero)
     G.name="Powerlaw-Cluster Random-Walk Graph"
     
     #list of probabilities 'pi' associated to each node 
