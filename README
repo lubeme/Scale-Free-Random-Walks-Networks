@@ -1,0 +1,9 @@
+
+NetworkX-compliant network generation model based on the work of Carlos Herrera and Pedro J. Zufiria presented on:
+
+"Generating scale-free networks with adjustable clustering coefficient via random walks,"
+Network Science Workshop (NSW),
+2011 IEEE , vol., no., pp.167-172, 22-24 June 2011
+
+
+A Scale-free graph of n nodes is grown with a control parameter over the clustering coefficient,using only local information of the network.
